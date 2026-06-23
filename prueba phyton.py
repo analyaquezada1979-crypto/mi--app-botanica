@@ -1,3 +1,4 @@
+
 import streamlit as st
 import anthropic
 
@@ -20,6 +21,9 @@ model="claude-3-sonnet-20240229",
 max_tokens=300,
 messages=[{"role": "user", "content": mensaje}]
 )
+
+# Mostrar la respuesta
+st.write(response.content[0].text)
 
 # Mostrar la respuesta
 st.write(response.content[0].text)
