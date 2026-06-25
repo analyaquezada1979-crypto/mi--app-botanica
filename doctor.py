@@ -2,7 +2,8 @@ import streamlit as st
 import base64
 from anthropic import Anthropic
 
-client = Anthropic("sk_ant_api03_fXY...UgAA")
+# Configuración del cliente (asegúrate de tener tu clave API en los "Secrets" de Streamlit)
+client = Anthropic(api_key=st.secret["ANTRHROPIC_API_KEY"]
 
 st.title("Doctor de Plantas con IA")
 
